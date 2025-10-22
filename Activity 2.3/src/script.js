@@ -33,7 +33,7 @@ scene.add(camera)
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true })
-renderer.outputEncoding = THREE.sRGBEncoding
+renderer.outputColorSpace = THREE.SRGBColorSpace
 renderer.shadowMap.enabled = true
 renderer.shadowMap.type = THREE.PCFSoftShadowMap
 renderer.setSize(sizes.width, sizes.height)
