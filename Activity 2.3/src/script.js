@@ -2,15 +2,6 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'lil-gui'
 
-/*
-Medieval Village - Stylized Three.js Scene
-- Single-file module. Drop into a bundler or import from a modern browser.
-- Uses only Three primitives and materials (no external textures). 
-- Features: several cottages, a well, market stalls, a lamp post, trees, cobblestone ground (simulated), fog, and small animations.
-- Performance-friendly: reused geometries and simple materials.
-
-Make sure your HTML contains: <canvas class="webgl"></canvas>
-*/
 
 // Debug GUI
 const gui = new dat.GUI({ width: 300 })
