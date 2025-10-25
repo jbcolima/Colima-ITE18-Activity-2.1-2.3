@@ -1,17 +1,11 @@
 {
   "version": 2,
+  "buildCommand": "node build.js",
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public"
-      }
+      "config": { "distDir": "public" }
     }
-  ],
-  "buildCommand": "node build.js",
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
